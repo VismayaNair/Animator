@@ -50,8 +50,8 @@ public class IdletoCrouch : MonoBehaviour
 ```
 
 ## Output:
-![output](W.png)
-![output](C.png)
+![W](https://github.com/VismayaNair/Animator/assets/93427210/24a0687e-2388-46fa-a0a4-ae3756ca42bc)
+![C](https://github.com/VismayaNair/Animator/assets/93427210/9bf5f43b-bbbe-4ee5-8559-b26c2594c7f1)
 
 
 ## Result:
