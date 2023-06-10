@@ -1,6 +1,7 @@
 # Animator
 
 ## Aim:
+  To develop a animator using unity.
 
 ## Algorithm:
 ### Step 1: Download 2 crouch idle from maximo 3d. Drag it and drop it in unity asset.
@@ -20,7 +21,38 @@
 ### Step 15: In blend tree, in blend type choose (2D Freedom Directional), parameter (InputX, InputY) , one crouch (0,-1,1) and walking (1,0,1). Bring the camera under the player 
 
 ## Program:
+# IDLE CROUTCH 
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class IdletoCrouch : MonoBehaviour
+{
+    public Animator animator;
+    public float InputX;
+    public float InputY;
+    // Start is called before the first frame update
+    void Start()
+    {
+        animator = this.gameObject.GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        InputX = Input.GetAxis("Vertical");
+        InputY = Input.GetAxis("Horizontal");
+        animator.SetFloat("InputX", InputX);
+        animator.SetFloat("InputY", InputY);
+    }
+}
+```
 
 ## Output:
+![output](W.png)
+![output](C.png)
+
 
 ## Result:
+ Animator using unity is developed successfully.
